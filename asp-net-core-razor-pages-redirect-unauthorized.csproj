@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <UserSecretsId>aspnet-asp_net_core_razor_pages_redirect_unauthorized-76128610-6292-4718-B14C-79D06BBFBD9D</UserSecretsId>
+    <UserSecretsId>aspnet-asp_net_core_razor_pages_redirect_unauthorized-6E9E207D-A6A4-44F1-A046-D64D5DC89EFF</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

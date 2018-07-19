@@ -37,18 +37,11 @@ namespace asp_net_core_razor_pages_redirect_unauthorized
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(
                     Configuration.GetConnectionString("DefaultConnection")));
-
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            // services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            services
-                .AddMvc()
-                .AddRazorPagesOptions(options => {
-                    options.Conventions.AuthorizePage("/Contact");
-                })
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
